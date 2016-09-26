@@ -152,22 +152,22 @@ table {
 
 }
 
-.item .icon {
-    width: 300px;
-    text-align: center;
-    float: right;
-    height: 70px;
-}
+/* Ez az `.item .icon` jó lett volna, ha lett volna egy <div class="icon">...</div> De ilyen nem volt :) */
 
 .content .item img {
-    text-align: center;
-    margin: 0 auto;
+    /* Nem kell pozícionálni különösebben, csak méretezni és float-olni */
+    width: 220px;
+    height: 150px;
+    float: left;
 }
 
-.content .item {
-    height: 442px;
-}
+/* Ez a `.content .item` sem kell. Felülírod vele a `.item`-ben megadott szabályokat. */
 
-.content .icon {
-    float: right;
+/*
+  Mivel a képet floatoljuk, ezért kell vmi az .item aljára, amivel a floatokat "reseteljük".
+  Pont jól jön hogy van egy "lábléce" minden cikk itemnek, ezért keratívan ennek adjuk meg, hogy
+  rendezze a float miatti sorokat.
+*/
+.content .footer {
+    clear: both;
 }

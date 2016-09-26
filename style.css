@@ -176,4 +176,24 @@ body {
 .content .footer {
     clear: both;
     padding-top: 30px;
+    color: #999;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+/* Külön az ikonokra külön beállításokat alkalmazunk. */
+.content .footer .fa {
+    display: inline-block;
+    margin: 0 4px 0 24px; /* Beállítjuk a térközöket */
+    font-size: 1.5em; /* Megnöveljük a betűméretet */
+}
+
+/*
+   Fent azt állítottuk be, hogy az ikontól balra 24px távolságot tartson, jobbra pedig 4px-t. Ez
+   viszont az első elem esetén elég hülye megoldást szülne, ezért itt megmondjuk a `:first-child`
+   pszeudo selectorral, hogy az itt megadott szabályok CSAK az első elemre vonatkozzanak, és
+   itt lenullázzuk a baloldali "távolságot", így mindjárt jól fog megjelenni az egész.
+ */
+.content .footer .fa:first-child {
+    margin-left: 0;
 }

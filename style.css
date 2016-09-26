@@ -146,10 +146,8 @@ table {
 }
 
 .item p {
-    width: 400px;
-    text-align: center;
-    margin: -270px 400px;
-
+    font-size: 18px;
+    line-height: 30px;
 }
 
 /* Ez az `.item .icon` jó lett volna, ha lett volna egy <div class="icon">...</div> De ilyen nem volt :) */
@@ -159,6 +157,7 @@ table {
     width: 220px;
     height: 150px;
     float: left;
+    margin: 5px 10px 10px 0; /* Berakunk egy kis térközt, hogy a szöveg ne pont a kép mellett kezdődjön. */
 }
 
 /* Ez a `.content .item` sem kell. Felülírod vele a `.item`-ben megadott szabályokat. */
@@ -170,4 +169,5 @@ table {
 */
 .content .footer {
     clear: both;
+    padding-top: 30px;
 }

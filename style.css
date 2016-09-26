@@ -63,21 +63,20 @@ table {
 
 .header .logo {
     float: left;
+    margin: 10px 0; /* A baloldali szövegeKET beigazítjuk "középre" függőlegesen azáltal, hogy felül és alul is 10-10px margót kap. */
 }
 
 .header h1 {
     color: white;
     font-size: 23px;
     line-height: 30px;
-    margin: 15px 160px;
 
 }
 
 .header p {
     color: #666;
     font-size: 14px;
-    line-height: 80px;
-    margin: 15px 160px;
+    line-height: 30px;
 }
 
 .header .wrapper {
@@ -87,8 +86,25 @@ table {
 
 .header .icons {
     float: right;
-    margin: 80px 160px;
+}
 
+/*
+ Itt adjuk meg, hogy a fejlécben szereplő ikonok kapjanak szürke, kör alakú hátteret és legyen nagyobb a méretük.
+ */
+.header .fa {
+    background: #666;       /* Ez a körpaca "háttérszíne" */
+    border-radius: 50%;     /* Itt a sarkok lekerekítését adjuk meg. Az 50%-kal egy olyan hatást érünk el, hogy egy kört kapunk végeredményben */
+    /* Méretek megadása: */
+    font-size: 24px;
+    line-height: 36px;      /* Fontos megadni a line-height-ot, hogy függőlegesen középre kerüljön a szöveg */
+    width: 36px;            /* A szélesség és magasság megadása ugyanolyan fontos, különben óválisokat kapunk, kör helyett */
+    height: 36px;
+    /* Az inline elemeknek nem lehet szélessége, ezért block kellene nekünk, hogy kört kapjunk és vízszintesen is középre
+    tudjunk igazítani. Ezért a kettő kombinációja fog nekünk kelleni, egy inline block */
+    display: inline-block;
+    text-align: center;     /* Vízszintesen is középre igazítunk, hogy a kör közepén legyenek a jelek */
+    margin: 10px 0 0 10px;  /* Magát a köröket pozícionáljuk egymáshoz képest. Beállítjuk, hogy fent és balra 10px távolságot tartsanak */
+    color: #333;            /* Ilyen színű lesz az ikon, mint a háttér, így úgy fest, mint ha átlátszó lenne. */
 }
 
 .cl {

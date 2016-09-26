@@ -81,7 +81,7 @@ table {
 }
 
 .header .wrapper {
-    width: 1200px;
+    width: 1000px; /* Erre írtam, hogy 1000px */
     margin: 0 auto;
 }
 
@@ -95,9 +95,13 @@ table {
     clear: both;
 }
 
-.content {
-    width: 100%;
-    margin: 50px 200px;
+/*
+ A `.content`-et önmagában nem szabályozzuk, jó úgy nekünk alapból, ahogy van. A benne lévő tartalmat a `.wrapper`-rel
+ szabályozzuk.
+*/
+.content .wrapper {
+    width: 760px;
+    margin: 0 auto;
 }
 
 .content h1 {

@@ -124,12 +124,10 @@ table {
     margin: 0 auto;
 }
 
-.content h1 {
-    font-size: 47px;
-    line-height: 60px;
-    text-decoration: none;
-    margin: 0 auto;
-}
+/*
+ Az itt megadott `.content h1` és az `.item h1` "ütötte" egymást, hiszen mindkét szabály kb ugyanarra
+ az elemre vonatkozott.
+*/
 
 .item {
     /* Nem kell megadni a width 100%-ot, mert alapból annyit, kivéve, ha floatolod, vagy ilyesmi */
@@ -142,8 +140,9 @@ table {
 }
 
 .item h1 {
-    font-size: 40px;
-    line-height: 120px;
+    font-size: 47px;
+    line-height: 60px;
+    text-align: center; /* A margin: 0 auto; csak szélességgel rendelkező inline elemekre használható csak. Ezt a `.content h1`-nél próbáltad. */
 }
 
 .item p {

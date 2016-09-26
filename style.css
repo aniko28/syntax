@@ -53,6 +53,11 @@ table {
     border-spacing: 0;
 }
 
+/* Általános beállítások. */
+body {
+    color: #444; /* A betűszín sok helyen ez. */
+}
+
 .header {
     background: #444444;
     /*
@@ -141,8 +146,9 @@ table {
 
 .item h1 {
     font-size: 47px;
-    line-height: 60px;
+    line-height: 52px;
     text-align: center; /* A margin: 0 auto; csak szélességgel rendelkező inline elemekre használható csak. Ezt a `.content h1`-nél próbáltad. */
+    margin-bottom: 30px;
 }
 
 .item p {
@@ -157,7 +163,7 @@ table {
     width: 220px;
     height: 150px;
     float: left;
-    margin: 5px 10px 10px 0; /* Berakunk egy kis térközt, hogy a szöveg ne pont a kép mellett kezdődjön. */
+    margin: 5px 16px 16px 0; /* Berakunk egy kis térközt, hogy a szöveg ne pont a kép mellett kezdődjön. */
 }
 
 /* Ez a `.content .item` sem kell. Felülírod vele a `.item`-ben megadott szabályokat. */

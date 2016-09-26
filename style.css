@@ -132,12 +132,13 @@ table {
 }
 
 .item {
-    width: 100%;
-    padding: 50px;
-    background: white;
-    height: 540px;
-    margin: 0 21px;
-    text-decoration: none;
+    /* Nem kell megadni a width 100%-ot, mert alapból annyit, kivéve, ha floatolod, vagy ilyesmi */
+    padding: 0 0 80px;
+    background: url(divider.png) no-repeat bottom center;
+    background-size: auto 23px;
+    /* magasság sem kell neki */
+    margin: 0 0 60px;
+    /* text-decoration -nal itt nem kell foglalkozni */
 }
 
 .item h1 {

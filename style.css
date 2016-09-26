@@ -55,7 +55,11 @@ table {
 
 .header {
     background: #444444;
-    margin: 0 auto;
+    /*
+      Hozzáadtam egy 100px-es alsó margin-t. Ha hiányzik a 4. elem, akkor automatikusan a "párját" veszi, azaz a 2.-at.
+      Ez azt jelenti, hogy: "0 auto 100px auto"
+    */
+    margin: 0 auto 100px;
     width: 100%;
     display: block;
     clear: both;
